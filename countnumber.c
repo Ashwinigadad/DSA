@@ -12,6 +12,6 @@ int main()
 		num=num/10;
 		count++;
 	}
-	printf("The length or count of digits in a number is %d",count);
+	printf("The count of digits in a number is %d",count);
 	return 0;
 }
