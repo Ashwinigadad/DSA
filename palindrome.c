@@ -1,5 +1,5 @@
+#include<stdio.h>
 #include <stdbool.h>
-
 bool isPalindrome(int x) {
     if (x < 0) {
         return false;
@@ -12,5 +12,10 @@ bool isPalindrome(int x) {
         x /= 10; 
     }
     return original == reversed;
+    printf("true");
+}
+int main(){
+	isPalindrome(121);
+	return 0;
 }
 
