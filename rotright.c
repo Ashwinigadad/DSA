@@ -26,7 +26,29 @@ int main(){
 }
 	
 	
+/*
+void rotate(int* nums, int numsSize, int k) {
+    k = k % numsSize; 
+    if (k == 0) return;
 
+    void reverse(int* arr, int start, int end) {
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+    reverse(nums, 0, numsSize - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, numsSize - 1);
+
+    for (int i = 0; i < numsSize; i++) {
+        printf("%d\t", nums[i]);
+    }
+}
+*/
 	
 	
 	
