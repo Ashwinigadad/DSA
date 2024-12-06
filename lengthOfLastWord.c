@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int lengthOfLastWord(char *s) {
-    int length = 0;
+int lengthOfLastWord(char *s,int length) {
     int i = strlen(s) - 1;
 
     while (i >= 0 && s[i] == ' ') {
@@ -18,15 +17,11 @@ int lengthOfLastWord(char *s) {
 }
 
 int main() {
-	char str1;
-	char str2;
-	
+	char s[100],length=0;
 	printf("str1:");
-	scanf("%[^\n]s",str1);
-	
-	while(getchar()=='\n');
-	printf("str2:");
-	scanf("%[^\n]s",str2);
+	scanf("%[^\n]",s);
+	lengthOfLastWord(s,length);
+	printf("%d",length);
     return 0;
 }
 
